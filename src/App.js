@@ -9,7 +9,7 @@ import Inventory from './pages/HomePage/IInventory/Inventory';
 function App() {
 
   return (
-    <div className="">
+    <div className="bg-light">
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>} >Home </Route>

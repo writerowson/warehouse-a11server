@@ -8,9 +8,9 @@ const Header = () => {
 
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+            <Navbar style={{ backgroundColor: '#110001' }} collapseOnSelect expand="lg" variant="dark">
                 <Container >
-                    <Navbar.Brand as={Link} to="/"> Pure Perfume  </Navbar.Brand>
+                    <Navbar.Brand className='fw-bold' as={Link} to="/"> Pure Perfume  </Navbar.Brand>
 
                     <div>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

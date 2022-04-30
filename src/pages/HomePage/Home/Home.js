@@ -1,12 +1,23 @@
 import React from 'react';
-import banner from '../../../images/banner.jpg'
+import banner from '../../../images/b.png'
+import Items from '../../../Shared/itemsOfInventory/Items';
+import UseInventory from '../../../Shared/UseInventory';
 const Home = () => {
+    const [inventory, setInventory] = UseInventory()
     return (
 
-        <div sticky="top">
-            <img style={{ height: '800px' }} className='w-100 ' src={banner} alt="" />
-            <h1 className='container font-roboto fs-1 text-center text-danger'>Feel the Magic </h1>
+        <div >
+            <img className='w-100  ' src={banner} alt="" />
 
+            <div className='container'>
+                <h2 style={{ color: '#110001' }} className='container font-roboto fs-1 text-center '>Our Best Collections</h2>
+                <div className='row'>
+                    {inventory.map(item => <Items
+                        key={item._id}
+                        item={item}></Items>)}
+
+                </div>
+            </div>
 
         </div>
 

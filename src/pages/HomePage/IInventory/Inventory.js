@@ -9,7 +9,7 @@ const Inventory = () => {
 
     return (
         <div className='container'>
-            <h2>Our Collections</h2>
+            <h2 className='text-center'>Our Collections</h2>
             <div className='row'>
 
                 {inventory.map(item => <Items

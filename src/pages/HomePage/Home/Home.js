@@ -1,8 +1,10 @@
 import React from 'react';
+import { Button, FormControl, InputGroup } from 'react-bootstrap';
 import banner from '../../../images/b.png'
 import Items from '../../../Shared/itemsOfInventory/Items';
 import Opinion from '../../../Shared/Opinion';
 import UseInventory from '../../../Shared/UseInventory';
+
 const Home = () => {
     const [inventory, setInventory] = UseInventory()
     return (
@@ -17,9 +19,21 @@ const Home = () => {
 
                 </div>
             </div>
-            <div>
-                <h2 style={{ color: '#110001' }} className='container font-roboto fs-1 text-center '>Our Partner's Opinions</h2>
+            <div className='container'>
+                <h2 style={{ color: '#110001' }} className=' font-roboto fs-1 text-center '>Our Partner's Opinions</h2>
                 <Opinion></Opinion>
+                <h2 style={{ color: '#110001' }} className=' font-roboto fs-1 text-center mt-5 '>Get The Latest Deals</h2>
+                <p style={{ color: '#110001' }} className=' font-roboto  text-center '>30% off for first time shopping</p>
+                <InputGroup className="px-5 mb-3">
+                    <FormControl
+                        placeholder="Email Address"
+                        aria-label="Email Address"
+                        aria-describedby="basic-addon2"
+                    />
+                    <Button variant=" text-light bg-danger" id="button-addon2">
+                        Subscribe
+                    </Button>
+                </InputGroup>
             </div>
 
         </div>

@@ -1,7 +1,12 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Items = ({ item }) => {
-    const { img, name, price, supplier, description } = item
+    const { img, name, price, supplier, description, _id } = item
+    const navigate = useNavigate()
+    const showDetails = () => {
+        navigate('/inventory/' + _id)
+    }
     return (
         <div style={{ color: '#110001' }} className='col-lg-2 col-12 text-center'>
             <div className='shadow rounded mb-5 p-2  '>
@@ -12,7 +17,7 @@ const Items = ({ item }) => {
                 <p><b>Price : {price}</b></p>
                 <p className='text-start'>{description}</p>
                 <p><b>Supllier :</b> {supplier}</p>
-                <button className='btn btn-danger'>For Details</button>
+                <button onClick={showDetails} className='btn btn-danger'>For Details</button>
             </div>
         </div >
     );

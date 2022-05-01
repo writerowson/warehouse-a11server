@@ -16,7 +16,7 @@ const Opinion = () => {
                         alt="first slide"
                     />
                     <p >One of the best site to believe words with their works</p>
-                    <h6>Product manager</h6>
+                    <h5 style={{ color: '#ff4444 ' }}>Product manager</h5>
                     <p>Of Olive</p>
 
                 </div>
@@ -30,7 +30,7 @@ const Opinion = () => {
                         alt="second slide"
                     />
                     <p >Better experience and better example</p>
-                    <h6>Owner</h6>
+                    <h5 style={{ color: '#ff4444 ' }}>Owner</h5>
                     <p>Of Dinago</p>
 
                 </div>
@@ -44,7 +44,7 @@ const Opinion = () => {
                         alt="Third slide"
                     />
                     <p >One of the best site to belive words with their works</p>
-                    <h6>Online Marketer</h6>
+                    <h5 style={{ color: '#ff4444 ' }}>Online Marketer</h5>
                     <p>Of Destination</p>
 
                 </div>

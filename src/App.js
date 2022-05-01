@@ -25,7 +25,7 @@ function App() {
         <Route path='*' element={<NotFounded></NotFounded>} >Home </Route>
       </Routes>
       <Footer></Footer>
-    </div>
+    </div> 
   );
 }
 

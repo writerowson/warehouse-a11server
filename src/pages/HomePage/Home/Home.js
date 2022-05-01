@@ -24,11 +24,11 @@ const Home = () => {
 
                 </div>
             </div>
-            <div className='container'>
-                <h2 style={{ color: '#110001' }} className=' font-roboto fs-1 text-center '>Our Partner's Opinions</h2>
+            <div className='container text-center'>
+                <h2 style={{ color: '#110001' }} className=' font-roboto fs-1  '>Our Partner's Opinions</h2>
                 <Opinion></Opinion>
-                <h2 style={{ color: '#110001' }} className=' font-roboto fs-1 text-center mt-5 '>Get The Latest Deals</h2>
-                <p style={{ color: '#110001' }} className=' font-roboto  text-center '>30% off for first time shopping</p>
+                <h2 style={{ color: '#110001' }} className=' font-roboto fs-1  mt-5 '>Get The Latest Deals</h2>
+                <p style={{ color: '#110001' }} className=' font-roboto   '>30% off for first time shopping</p>
                 <InputGroup className="px-5 mb-3 ">
                     <FormControl
                         placeholder="Email Address"

@@ -3,8 +3,11 @@ import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
-import Spinner from '../../Shared/Spinner';
-
+import Spinner from '../../Shared/Loading';
+import { sendEmailVerification } from 'firebase/auth';
+import 'react-toastify/dist/ReactToastify.css';
+import { toast, ToastContainer } from 'react-toastify';
+import Loading from '../../Shared/Loading';
 
 const Register = () => {
     const navigate = useNavigate()
@@ -14,7 +17,7 @@ const Register = () => {
         loading,
         error,
     ] = useCreateUserWithEmailAndPassword(auth);
-    const handleRegister = (e) => {
+    const handleRegister = e => {
         e.preventDefault()
         const name = e.target.name.value;
         const email = e.target.email.value;
@@ -25,12 +28,25 @@ const Register = () => {
     const navigateLogin = e => {
         navigate('/login')
     }
-    if (loading) {
-        return <Spinner></Spinner>;
+    const varifyEmail = () => {
+        sendEmailVerification(auth.currentUser)
+            .then(() => {
+                toast('Email sent to verify');
+            })
     }
     if (user) {
+        varifyEmail()
         navigate('/home')
-        console.log(user);
+    }
+    if (loading) {
+        return <Loading></Loading>;
+    }
+    if (error) {
+        return (
+            <div className='container text-center fs-3 fw-bold mt-5'>
+                <p className='text-danger'>Error: {error.message}</p>
+            </div>
+        );
     }
     return (
         <div style={{ color: '#110001' }} className='container w-50'>
@@ -57,6 +73,7 @@ const Register = () => {
                 </Button>
             </Form>
             <p className='text-center'>Old User? <Link onClick={navigateLogin} to='/login' className='text-danger fw-bold text-decoration-none' >PLease log in</Link> </p>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };

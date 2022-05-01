@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Card, Form, FormControl, InputGroup } from 'react-bootstrap';
+import { Button, Card, FormControl, InputGroup } from 'react-bootstrap';
 import banner from '../../../images/bg.jpg'
 import Items from '../../../Shared/itemsOfInventory/Items';
 import Opinion from '../../../Shared/Opinion';

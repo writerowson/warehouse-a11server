@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Home from './pages/HomePage/Home/Home';
@@ -25,7 +25,7 @@ function App() {
         <Route path='*' element={<NotFounded></NotFounded>} >Home </Route>
       </Routes>
       <Footer></Footer>
-    </div> 
+    </div>
   );
 }
 

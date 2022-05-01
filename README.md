@@ -9,3 +9,4 @@
 * React-router
 * Firebase
 * React-firebase-hooks
+* React-Toastify

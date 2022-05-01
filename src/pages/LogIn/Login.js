@@ -3,8 +3,10 @@ import { Button, Form } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
-import Spinner from '../../Shared/Spinner';
-
+import Spinner from '../../Shared/Loading';
+import 'react-toastify/dist/ReactToastify.css';
+import { toast, ToastContainer } from 'react-toastify';
+import Loading from '../../Shared/Loading';
 
 const Login = () => {
     const emailRef = useRef('')
@@ -18,7 +20,7 @@ const Login = () => {
     ] = useSignInWithEmailAndPassword(auth)
     const [
         sendPasswordResetEmail,
-        sending
+
     ] = useSendPasswordResetEmail(auth)
     const handleLogin = e => {
         e.preventDefault()
@@ -32,15 +34,15 @@ const Login = () => {
         if (email) {
             sendPasswordResetEmail(auth, email)
                 .then(() => {
-                    alert('Email Sent')
+                    toast('Email Sent')
                 })
         }
         else {
-            alert('Please enter your email address')
+            toast('Please enter your email address')
         }
     }
     if (loading) {
-        return <Spinner></Spinner>;
+        return <Loading></Loading>;
     }
     if (user) {
         navigate('/home');
@@ -48,7 +50,7 @@ const Login = () => {
     if (error) {
         return (
             <div className='container text-center fs-3 fw-bold mt-5'>
-                <p >Error: {error.message}</p>
+                <p className='text-danger'>Error: {error.message}</p>
             </div>
         );
     }
@@ -75,8 +77,9 @@ const Login = () => {
                     Log in
                 </Button>
             </Form>
-            <p ><button style={{ color: '#110001' }} className=' btn btn-link text-decoration-none' onClick={forgetPassword}> <b>Forget Password?</b> </button></p>
+            <p style={{ color: '#110001' }} className=' btn btn-link text-decoration-none' onClick={forgetPassword}> <b>Forget Password?</b> </p>
             <p className='text-center'>New User? <Link onClick={navigateRegister} to='/register' className='text-danger fw-bold text-decoration-none' >Register for free</Link> </p>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };

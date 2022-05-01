@@ -4,6 +4,12 @@ import { Link, useNavigate } from 'react-router-dom';
 
 const Register = () => {
     const navigate = useNavigate()
+    // const [
+    //     signInWithEmailAndPassword,
+    //     user,
+    //     loading,
+    //     error,
+    // ] = useSignInWithEmailAndPassword(auth);
     const navigateLogin = e => {
         navigate('/login')
     }

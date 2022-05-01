@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <div className='' >
             <img className='w-100  ' src={banner} alt="" />
-            <div className='container'>
+            <div className=''>
                 <h2 style={{ color: '#110001' }} className='container mt-5 font-roboto fs-1 text-center '>Our Best Collections</h2>
                 <div className='row'>
                     {inventory.map(item => <Items

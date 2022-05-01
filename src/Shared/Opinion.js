@@ -15,7 +15,7 @@ const Opinion = () => {
                         src={man1}
                         alt="first slide"
                     />
-                    <p >One of the best site to belive words with their works</p>
+                    <p >One of the best site to believe words with their works</p>
                     <h6>Product manager</h6>
                     <p>Of Olive</p>
 
@@ -29,7 +29,7 @@ const Opinion = () => {
                         src={woman}
                         alt="second slide"
                     />
-                    <p >One of the best site to belive words with their works</p>
+                    <p >Better experience and better example</p>
                     <h6>Owner</h6>
                     <p>Of Dinago</p>
 
@@ -45,7 +45,7 @@ const Opinion = () => {
                     />
                     <p >One of the best site to belive words with their works</p>
                     <h6>Online Marketer</h6>
-                    <p>Of Olive</p>
+                    <p>Of Destination</p>
 
                 </div>
             </Carousel.Item>

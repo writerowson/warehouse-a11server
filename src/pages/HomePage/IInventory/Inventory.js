@@ -8,13 +8,15 @@ const Inventory = () => {
     const [inventory, setInventory] = UseInventory()
 
     return (
-        <div className='container'>
-            <h2 className='text-center'>Our Collections</h2>
+        <div className=''>
+            <h2 style={{ color: '#110001' }} className='container mt-5 font-roboto fs-1 text-center '>Our  Collections</h2>
             <div className='row'>
 
                 {inventory.map(item => <Items
                     key={item._id}
-                    item={item}></Items>)}
+                    item={item}>
+
+                </Items>)}
 
             </div>
         </div >

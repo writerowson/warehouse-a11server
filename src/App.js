@@ -5,6 +5,8 @@ import Home from './pages/HomePage/Home/Home';
 import Header from './pages/Header/Header';
 import Footer from './pages/Footer/Footer';
 import Inventory from './pages/HomePage/IInventory/Inventory';
+import DetailofInventory from './pages/HomePage/IInventory/detailOfInventory/DetailofInventory';
+import NotFounded from './pages/NotFounded/NotFounded';
 
 function App() {
 
@@ -15,8 +17,9 @@ function App() {
         <Route path='/' element={<Home></Home>} >Home </Route>
         <Route path='home' element={<Home></Home>} >Home </Route>
         <Route path='/inventory' element={<Inventory></Inventory>} >Inventory </Route>
+        <Route path='/inventory/:id' element={<DetailofInventory></DetailofInventory>} >Inventory </Route>
         <Route path='/' element={<Home></Home>} >Home </Route>
-        <Route path='/' element={<Home></Home>} >Home </Route>
+        <Route path='*' element={<NotFounded></NotFounded>} >Home </Route>
       </Routes>
       <Footer></Footer>
     </div>

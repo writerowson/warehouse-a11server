@@ -1,6 +1,6 @@
 [
   {
-    "_id": "626ce6062a00971df8acbcaa",
+    "_id": "1",
     "price": "$1,430.09",
     "img": "https://img.freepik.com/free-photo/eau-de-parfum-fragrance-bottle-fluffy-blanket_53876-128126.jpg?size=338&ext=jpg&uid=R29454832&ga=GA1.2.487378992.1651238806",
     "name": "Tammy Reed",
@@ -9,25 +9,25 @@
     "phone": "+1 (831) 579-3716"
   },
   {
-    "_id": "626ce606f6f46edc9c26f4e6",
+    "_id": "2",
     "price": "$3,086.43",
     "img": "https://img.freepik.com/free-photo/front-view-expensive-fragnance-with-flowers-dark-background-color-perfume-gift-present-love-marriage-scent-flower_140725-158075.jpg?size=338&ext=jpg&uid=R29454832&ga=GA1.2.487378992.1651238806",
     "name": "Watkins Noble",
     "supplier": "PYRAMIS",
-    "description": "PYRAMIS is one of the most widely-used types of perfume. Most brands are generally cheaper than Eau de parfum. ",
+    "description": "Watkins Noble is one of the most widely-used types of perfume. Most brands are generally cheaper than it. ",
     "phone": "+1 (954) 563-3054"
   },
   {
-    "_id": "626ce6069aa0f4cbe20fd7c0",
+    "_id": "3",
     "price": "$599.43",
     "img": "https://img.freepik.com/free-photo/concept-fragrant-flavored-perfume-close-up_185193-75720.jpg?size=338&ext=jpg&uid=R29454832&ga=GA1.2.487378992.1651238806",
     "name": "Dona Preston",
     "supplier": "COWTOWN",
-    "description": "Dona Preston is one of the universal fragrance types people wear for everyday events and activities. ",
+    "description": "Dona Preston is one of the universal fragrance types people wear for everyday events and activities casually. ",
     "phone": "+1 (808) 478-2057"
   },
   {
-    "_id": "626ce606b9d52843375a8bc0",
+    "_id": "4",
     "price": "$1,174.87",
     "img": "https://img.freepik.com/free-photo/concept-fragrant-flavored-perfume-close-up_185193-76674.jpg?size=338&ext=jpg&uid=R29454832&ga=GA1.2.487378992.1651238806",
     "name": "Janelle Norman",
@@ -36,7 +36,7 @@
     "phone": "+1 (958) 476-3231"
   },
   {
-    "_id": "626ce60636040ab620452a89",
+    "_id": "5",
     "price": "$3,407.91",
     "img": "https://img.freepik.com/free-photo/concept-fragrant-flavored-perfume-close-up_185193-75335.jpg?size=338&ext=jpg&uid=R29454832&ga=GA1.2.487378992.1651238806",
     "name": "Susanna Woods",
@@ -45,7 +45,7 @@
     "phone": "+1 (854) 492-2485"
   },
   {
-    "_id": "626ce60692a01f97a03aff71",
+    "_id": "6",
     "price": "$3,458.12",
     "img": "https://img.freepik.com/free-photo/top-view-black-sunflower-seeds-with-oil-dark-background-corn-snack-oil-color-cips-seed-photo_140725-160788.jpg?size=338&ext=jpg&uid=R29454832&ga=GA1.2.487378992.1651238806",
     "name": "Carlson Ingram",

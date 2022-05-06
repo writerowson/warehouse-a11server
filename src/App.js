@@ -10,6 +10,7 @@ import NotFounded from './pages/NotFounded/NotFounded';
 import Login from './pages/LogIn/Login';
 import Register from './pages/Register/Register';
 import Inventory from './pages/HomePage/IInventory/itemsOfInventory/Inventory';
+import Inventories from './pages/HomePage/IInventory/Inventories';
 
 function App() {
 
@@ -19,7 +20,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>} >Home </Route>
         <Route path='home' element={<Home></Home>} >Home </Route>
-        <Route path='/inventory' element={<Inventory></Inventory>} >Inventory </Route>
+        <Route path='/inventory' element={<Inventories></Inventories>} >Inventory </Route>
         <Route path='/inventory/:id' element={<DetailofInventory></DetailofInventory>} >Inventory </Route>
         <Route path='/login' element={<Login></Login>} >Home </Route>
         <Route path='/register' element={<Register></Register>} >Home </Route>

@@ -7,6 +7,7 @@ import Spinner from '../../Shared/Loading';
 import 'react-toastify/dist/ReactToastify.css';
 import { toast, ToastContainer } from 'react-toastify';
 import Loading from '../../Shared/Loading';
+import SocialLogin from './SocialLogin';
 
 const Login = () => {
     const emailRef = useRef('')
@@ -80,6 +81,7 @@ const Login = () => {
             <p style={{ color: '#110001' }} className=' btn btn-link text-decoration-none' onClick={forgetPassword}> <b>Forget Password?</b> </p>
             <p className='text-center'>New User? <Link onClick={navigateRegister} to='/register' className='text-danger fw-bold text-decoration-none' >Register for free</Link> </p>
             <ToastContainer></ToastContainer>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };

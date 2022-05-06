@@ -8,6 +8,7 @@ import { sendEmailVerification } from 'firebase/auth';
 import 'react-toastify/dist/ReactToastify.css';
 import { toast, ToastContainer } from 'react-toastify';
 import Loading from '../../Shared/Loading';
+import SocialLogin from '../LogIn/SocialLogin';
 
 const Register = () => {
     const navigate = useNavigate()
@@ -74,6 +75,7 @@ const Register = () => {
             </Form>
             <p className='text-center'>Old User? <Link onClick={navigateLogin} to='/login' className='text-danger fw-bold text-decoration-none' >PLease log in</Link> </p>
             <ToastContainer></ToastContainer>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };

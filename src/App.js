@@ -4,11 +4,12 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './pages/HomePage/Home/Home';
 import Header from './pages/Header/Header';
 import Footer from './pages/Footer/Footer';
-import Inventory from './pages/HomePage/IInventory/Inventory';
+
 import DetailofInventory from './pages/HomePage/IInventory/detailOfInventory/DetailofInventory';
 import NotFounded from './pages/NotFounded/NotFounded';
 import Login from './pages/LogIn/Login';
 import Register from './pages/Register/Register';
+import Inventory from './pages/HomePage/IInventory/itemsOfInventory/Inventory';
 
 function App() {
 

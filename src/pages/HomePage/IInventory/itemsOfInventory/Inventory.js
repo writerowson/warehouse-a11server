@@ -1,8 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-
-const Items = ({ item }) => {
-    const { img, name, price, supplier, description, _id } = item
+const Inventory = ({ inventory }) => {
+    const { img, name, price, supplier, description, _id } = inventory
     const navigate = useNavigate()
     const showDetails = () => {
         navigate('/inventory/' + _id)
@@ -23,4 +22,5 @@ const Items = ({ item }) => {
     );
 };
 
-export default Items;
+export default Inventory;
+

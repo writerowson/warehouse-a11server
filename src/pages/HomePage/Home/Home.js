@@ -1,26 +1,28 @@
 import React from 'react';
 import { Button, Card, FormControl, InputGroup } from 'react-bootstrap';
 import banner from '../../../images/bg.jpg'
-import Items from '../../../Shared/itemsOfInventory/Items';
+
 import Opinion from '../../../Shared/Opinion';
 import UseInventory from '../../../Shared/UseInventory';
+import Inventory from '../IInventory/itemsOfInventory/Inventory';
 
 const Home = () => {
-    const [inventory, setInventory] = UseInventory()
+    const [inventories, setinventories] = UseInventory()
     return (
         <div className='' >
             <Card className=" text-danger position-relative ">
                 <Card.Img className='opacity-10 ' src={banner} alt="Card image" />
-                <Card.ImgOverlay className='text-center  mt-5 position-sticky   '>
+                {/* <Card.ImgOverlay className='text-center  mt-5 position-sticky   '>
                     <h1 style={{ fontSize: '5rem' }} className='fw-1  text-roboto' >PURE PERFUME</h1>
-                </Card.ImgOverlay>
+                </Card.ImgOverlay> */}
             </Card>
             <div className=''>
                 <h2 style={{ color: '#110001' }} className='container mt-5 font-roboto fs-1 text-center '>Our Best Collections</h2>
                 <div className='row'>
-                    {inventory.map(item => <Items
-                        key={item._id}
-                        item={item}></Items>)}
+                    {inventories.map(inventory => <Inventory
+                        key={inventory._id}
+                        inventory={inventory}
+                    ></Inventory>)}
 
                 </div>
             </div>

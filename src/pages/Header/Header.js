@@ -21,16 +21,16 @@ const Header = () => {
                     <div>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
-                            <Nav className="me-auto align-items-center">
+                            <Nav className="m-auto align-items-center">
                                 <CustomLink className="me-2" as={Link} to='/'>Home</CustomLink>
                                 <CustomLink className="me-2" as={Link} to='/inventory'>Inventory</CustomLink>
                                 <CustomLink className="me-2" as={Link} to='/blog'>Blog</CustomLink>
 
                                 <CustomLink className="me-2" as={Link} to="/about">About</CustomLink>
                                 {user ?
-                                    <button onClick={handleSignOut} className="btn btn-light" >Sign Out</button>
+                                    <button onClick={handleSignOut} className="btn btn-light text-danger fw-bold ms-2" >Sign Out</button>
                                     :
-                                    <CustomLink className="me-2" as={Link} to='/login'>
+                                    <CustomLink as={Link} to='/login'>
                                         Login</CustomLink>}
                             </Nav>
                         </Navbar.Collapse>

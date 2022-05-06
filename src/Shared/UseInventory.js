@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 
 
 const UseInventory = () => {
-    const [inventory, setinventory] = useState([])
+    const [inventories, setinventories] = useState([])
     useEffect(() => {
-        fetch('fakedata.json')
+        fetch('http://localhost:5000/inventory')
             .then(res => res.json())
-            .then(data => setinventory(data))
+            .then(data => setinventories(data))
     }, [])
-    return [inventory, setinventory]
+    return [inventories, setinventories]
 
 };
 

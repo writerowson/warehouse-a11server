@@ -12,6 +12,7 @@ import Register from './pages/Register/Register';
 
 import Inventories from './pages/HomePage/IInventory/Inventories';
 import Blog from './pages/Blog/Blog';
+import RequireAuth from './Shared/RequireAuth';
 
 function App() {
 
@@ -19,13 +20,13 @@ function App() {
     <div className="bg-light">
       <Header></Header>
       <Routes>
-        <Route path='/' element={<Home></Home>} >Home </Route>
-        <Route path='home' element={<Home></Home>} >Home </Route>
-        <Route path='/inventory' element={<Inventories></Inventories>} >Inventory </Route>
-        <Route path='/inventory/:id' element={<DetailofInventory></DetailofInventory>} >Inventory </Route>
-        <Route path='/login' element={<Login></Login>} >Log in </Route>
+        <Route path='/' element={<Home></Home>} > </Route>
+        <Route path='home' element={<Home></Home>} > </Route>
+        <Route path='/inventory' element={<Inventories></Inventories>} > </Route>
+        <Route path='/inventory/:inventoryId' element={<RequireAuth><DetailofInventory></DetailofInventory></RequireAuth>} > </Route>
+        <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>} > </Route>
-        <Route path='/blog' element={<Blog></Blog>} > </Route>s
+        <Route path='/blog' element={<RequireAuth><Blog></Blog></RequireAuth>} > </Route>
         <Route path='*' element={<NotFounded></NotFounded>} > </Route>
       </Routes>
       <Footer></Footer>

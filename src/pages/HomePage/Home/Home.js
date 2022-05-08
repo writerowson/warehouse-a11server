@@ -28,10 +28,10 @@ const Home = () => {
             </div>
             <Specialties></Specialties>
 
-            <div className='container text-center'>
+            <div className=' text-center mt-5'>
                 <h2 style={{ color: '#110001' }} className=' font-roboto fs-1  '>Our TeamMates</h2>
                 <Opinion></Opinion>
-                <h2 style={{ color: '#110001' }} className=' font-roboto fs-1  mt-5 '>Get The Latest Deals</h2>
+                {/* <h2 style={{ color: '#110001' }} className=' font-roboto fs-1  mt-5 '>Get The Latest Deals</h2>
                 <p style={{ color: '#110001' }} className=' font-roboto   '>30% off for first time Joining</p>
                 <InputGroup className="px-5 mb-3 ">
                     <FormControl
@@ -43,7 +43,7 @@ const Home = () => {
                         Subscribe
                     </Button>
 
-                </InputGroup>
+                </InputGroup> */}
 
 
             </div>

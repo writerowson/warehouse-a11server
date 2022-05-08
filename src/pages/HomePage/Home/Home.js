@@ -2,9 +2,12 @@ import React from 'react';
 import { Button, Card, FormControl, InputGroup } from 'react-bootstrap';
 import banner from '../../../images/bg.jpg'
 
-import Opinion from '../../../Shared/Opinion';
+
+import Opinion from '../../../pages/HomePage/Home/Opinion'
 import UseInventory from '../../../Shared/UseInventory';
 import Inventory from '../IInventory/itemsOfInventory/Inventory';
+import Specialties from './Specialties';
+
 
 const Home = () => {
     const [inventories, setinventories] = UseInventory()
@@ -12,9 +15,6 @@ const Home = () => {
         <div className='' >
             <Card className=" text-danger position-relative ">
                 <Card.Img className='opacity-10 ' src={banner} alt="Card image" />
-                {/* <Card.ImgOverlay className='text-center  mt-5 position-sticky   '>
-                    <h1 style={{ fontSize: '5rem' }} className='fw-1  text-roboto' >PURE PERFUME</h1>
-                </Card.ImgOverlay> */}
             </Card>
             <div className=''>
                 <h2 style={{ color: '#110001' }} className='container mt-5 font-roboto fs-1 text-center '>Our Best Collections</h2>
@@ -26,6 +26,8 @@ const Home = () => {
 
                 </div>
             </div>
+            <Specialties></Specialties>
+
             <div className='container text-center'>
                 <h2 style={{ color: '#110001' }} className=' font-roboto fs-1  '>Our TeamMates</h2>
                 <Opinion></Opinion>

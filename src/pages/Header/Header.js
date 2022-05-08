@@ -26,7 +26,6 @@ const Header = () => {
                                 <CustomLink className="me-2" as={Link} to='/inventory'>Inventory</CustomLink>
                                 <CustomLink className="me-2" as={Link} to='/blog'>Blog</CustomLink>
 
-                                <CustomLink className="me-2" as={Link} to="/about">About</CustomLink>
                                 {user ?
                                     <button onClick={handleSignOut} className="btn btn-light text-danger fw-bold ms-2" >Sign Out</button>
                                     :

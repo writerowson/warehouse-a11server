@@ -15,9 +15,9 @@ const Opinion = () => {
                         src={man1}
                         alt="first slide"
                     />
-                    <p >One of the best site to believe words with their works</p>
+
                     <h5 style={{ color: '#ff4444 ' }}>Product manager</h5>
-                    <p>Of Olive</p>
+                    <p> To Contact : +9978608767</p>
 
                 </div>
             </Carousel.Item>
@@ -29,9 +29,9 @@ const Opinion = () => {
                         src={woman}
                         alt="second slide"
                     />
-                    <p >Better experience and better example</p>
+
                     <h5 style={{ color: '#ff4444 ' }}>Owner</h5>
-                    <p>Of Dinago</p>
+                    <p> To Contact : +9978448767</p>
 
                 </div>
             </Carousel.Item>
@@ -43,9 +43,9 @@ const Opinion = () => {
                         src={man3}
                         alt="Third slide"
                     />
-                    <p >One of the best site to belive words with their works</p>
-                    <h5 style={{ color: '#ff4444 ' }}>Online Marketer</h5>
-                    <p>Of Destination</p>
+
+                    <h5 style={{ color: '#ff4444 ' }}>Quality checker</h5>
+                    <p> To Contact : +9912454657</p>
 
                 </div>
             </Carousel.Item>

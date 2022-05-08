@@ -9,8 +9,9 @@ import DetailofInventory from './pages/HomePage/IInventory/detailOfInventory/Det
 import NotFounded from './pages/NotFounded/NotFounded';
 import Login from './pages/LogIn/Login';
 import Register from './pages/Register/Register';
-import Inventory from './pages/HomePage/IInventory/itemsOfInventory/Inventory';
+
 import Inventories from './pages/HomePage/IInventory/Inventories';
+import Blog from './pages/Blog/Blog';
 
 function App() {
 
@@ -22,9 +23,10 @@ function App() {
         <Route path='home' element={<Home></Home>} >Home </Route>
         <Route path='/inventory' element={<Inventories></Inventories>} >Inventory </Route>
         <Route path='/inventory/:id' element={<DetailofInventory></DetailofInventory>} >Inventory </Route>
-        <Route path='/login' element={<Login></Login>} >Home </Route>
-        <Route path='/register' element={<Register></Register>} >Home </Route>
-        <Route path='*' element={<NotFounded></NotFounded>} >Home </Route>
+        <Route path='/login' element={<Login></Login>} >Log in </Route>
+        <Route path='/register' element={<Register></Register>} > </Route>
+        <Route path='/blog' element={<Blog></Blog>} > </Route>s
+        <Route path='*' element={<NotFounded></NotFounded>} > </Route>
       </Routes>
       <Footer></Footer>
     </div>

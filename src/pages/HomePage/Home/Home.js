@@ -19,7 +19,7 @@ const Home = () => {
             <div className=''>
                 <h2 style={{ color: '#110001' }} className='container mt-5 font-roboto fs-1 text-center '>Our Best Collections</h2>
                 <div className='row'>
-                    {inventories.map(inventory => <Inventory
+                    {inventories.slice(0, 6).map(inventory => <Inventory
                         key={inventory._id}
                         inventory={inventory}
                     ></Inventory>)}
@@ -27,10 +27,10 @@ const Home = () => {
                 </div>
             </div>
             <div className='container text-center'>
-                <h2 style={{ color: '#110001' }} className=' font-roboto fs-1  '>Our Partner's Opinions</h2>
+                <h2 style={{ color: '#110001' }} className=' font-roboto fs-1  '>Our TeamMates</h2>
                 <Opinion></Opinion>
                 <h2 style={{ color: '#110001' }} className=' font-roboto fs-1  mt-5 '>Get The Latest Deals</h2>
-                <p style={{ color: '#110001' }} className=' font-roboto   '>30% off for first time shopping</p>
+                <p style={{ color: '#110001' }} className=' font-roboto   '>30% off for first time Joining</p>
                 <InputGroup className="px-5 mb-3 ">
                     <FormControl
                         placeholder="Email Address"

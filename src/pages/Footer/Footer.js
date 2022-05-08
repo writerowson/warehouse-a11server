@@ -5,7 +5,7 @@ import { SiFacebook } from "react-icons/si"
 
 const Footer = () => {
     return (
-        <div style={{ backgroundColor: '#110001' }} className=' relative-bottom text-center mt-5 p-3'>
+        <div style={{ backgroundColor: '#110001' }} className=' absolute-bottom text-center mt-5 p-3'>
             <p className='text-light '>
                 Follow Us on <br /> <ImYoutube></ImYoutube>   <SiFacebook></SiFacebook>   <ImTwitter></ImTwitter> </p>
             <p className='text-light mt-5'>

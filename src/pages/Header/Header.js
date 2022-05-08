@@ -13,7 +13,7 @@ const Header = () => {
     }
 
     return (
-        <div>
+        <div className=''>
             <Navbar style={{ backgroundColor: '#110001' }} collapseOnSelect expand="lg" variant="dark">
                 <Container >
                     <Navbar.Brand className='fw-bold' as={Link} to="/"> Pure Perfume  </Navbar.Brand>

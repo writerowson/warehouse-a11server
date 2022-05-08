@@ -19,7 +19,7 @@ const Inventory = ({ inventory }) => {
                 <p><b>Quantity :</b>{quantity}</p>
                 <p className='text-start'>{description}</p>
                 <p><b>Supllier :</b> {supplier}</p>
-                <p>Contact Supllier : {phone}</p>
+
                 <button onClick={() => showDetails(_id)} className='btn btn-danger'>Stock Update</button>
             </div>
         </div >

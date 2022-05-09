@@ -11,7 +11,7 @@ const Inventories = () => {
     const [pages, setPages] = useState(0)
 
     useEffect(() => {
-        fetch('http://localhost:5000/inventoryCount')
+        fetch('https://salty-shore-69868.herokuapp.com/inventoryCount')
             .then(res => res.json())
             .then(data => {
                 const count = data.count

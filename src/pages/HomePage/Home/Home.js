@@ -7,7 +7,7 @@ import Opinion from '../../../pages/HomePage/Home/Opinion'
 import UseInventory from '../../../Shared/UseInventory';
 import Inventory from '../IInventory/itemsOfInventory/Inventory';
 import Specialties from './Specialties';
-
+import bg from '../../../images/bg2.jpg'
 
 const Home = () => {
     const [inventories, setinventories] = UseInventory()
@@ -28,9 +28,13 @@ const Home = () => {
             </div>
             <Specialties></Specialties>
 
-            <div className=' text-center mt-5'>
-                <h2 style={{ color: '#110001' }} className=' font-roboto fs-1  '>Our TeamMates</h2>
-                <Opinion></Opinion>
+            <div className=' text-center mt-5 position-relative'>
+                {/* <img className='w-100' src={bg} alt="" /> */}
+                <div className=''>
+                    <h2 style={{ color: '#110001' }} className=' font-roboto fs-1  '>Our TeamMates</h2>
+                    <Opinion></Opinion>
+                </div>
+
                 {/* <h2 style={{ color: '#110001' }} className=' font-roboto fs-1  mt-5 '>Get The Latest Deals</h2>
                 <p style={{ color: '#110001' }} className=' font-roboto   '>30% off for first time Joining</p>
                 <InputGroup className="px-5 mb-3 ">

@@ -29,6 +29,22 @@ const Login = () => {
         const password = passwordRef.current.value;
         signInWithEmailAndPassword(email, password)
         console.log(email, password);
+
+        fetch('http://localhost:5000/login', {
+            method: 'POST',
+            headers: {
+                'content-type': "application/json"
+            },
+            body: JSON.stringify({ email, password })
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.success) {
+                    localStorage.setItem('accessToken', data.accessToken);
+                    navigate('/home')
+                }
+                console.log(data);
+            })
     }
     const forgetPassword = () => {
         const email = emailRef.current.value;

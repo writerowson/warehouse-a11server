@@ -3,7 +3,7 @@
 ## Live link https://assignment11-8f26c.web.app/
 ## Stackoverflow link https://stackoverflow.com/questions/72149729/failed-to-fetch-data-from-mongodb-in-dynamic-route
 
-### This is client site of pure perfume website.In client site usually we did all visual structure of website Here we use NodeJs as runtime environment 
+### This is client site of pure perfume website.In client site usually we did all visual structure of website. Here we use NodeJs as runtime environment 
 
 
 ### Here the list of methods using in This site
@@ -16,3 +16,4 @@
 * React-firebase-hooks
 * React-Toastify
 * MongoDb
+* Heroku

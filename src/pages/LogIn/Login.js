@@ -30,7 +30,7 @@ const Login = () => {
         signInWithEmailAndPassword(email, password)
         console.log(email, password);
 
-        fetch('http://localhost:5000/login', {
+        fetch('https://salty-shore-69868.herokuapp.com/login', {
             method: 'POST',
             headers: {
                 'content-type': "application/json"

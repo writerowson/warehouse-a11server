@@ -1,15 +1,15 @@
 import React from 'react';
-import bg from '../../../images/banner.jpg'
+import bg from '../../../pages/images/banner.jpg'
 import { MdLocalConvenienceStore } from "react-icons/md"
 import { GiHandTruck } from "react-icons/gi"
 import { ImTruck } from "react-icons/im"
 
 const Specialties = () => {
     return (
-        <div className=" text-light position-relative ">
+        <div className=" text-light position-relative mt-5 ">
             <img className=' w-100 d-block card-img' src={bg} alt="" />
-            <div className='card-img-overlay bg-dark bg-opacity-50 text-center  justify-content-lg-center '>
-                <h1 className=' text-roboto mt-lg-5 mb-lg-5 '>Our Specialities </h1>
+            <div className='card-img-overlay bg-dark bg-opacity-50 text-center  justify-content-center '>
+                <h1 className=' text-roboto  '>Our Specialities </h1>
                 <div className=' row align-items-center  '>
                     <div className='col-lg-4 col-12'>
                         <div className='d-flex align-items-center '>

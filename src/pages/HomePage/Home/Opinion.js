@@ -1,9 +1,8 @@
-
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import man1 from '../../../images/partner/p1.png'
-import woman from '../../../images/partner/p2.png'
-import man3 from '../../../images/partner/p3.png'
+import man1 from '../../../pages/images/partner/p1.png'
+import woman from '../../../pages/images/partner/p2.png'
+import man3 from '../../../pages/images/partner/p3.png'
 
 const Opinion = () => {
     return (

@@ -20,21 +20,22 @@ const RequireAuth = ({ children }) => {
     if (error) {
         <p className='text-danger'>Error: {error.message}</p>
     }
-    if (!user.emailVerified) {
-        return <div className='text-center '>
-            <h3 style={{ marginTop: '10rem' }} className='text-danger '>Your Email is not verified</h3>
-            <h5 className='text-success'>Please Verify your email address</h5>
-            <button style={{ marginBottom: '10rem' }} className='btn btn-danger'
-                onClick={async () => {
-                    await sendEmailVerification();
-                    toast('Email sent');
-                }}
-            >
-                Send Verification Email again
-            </button >
-            <ToastContainer></ToastContainer>
-        </div>
-    }
+
+    // if (!user.emailVerified) {
+    //     return <div className='text-center '>
+    //         <h3 style={{ marginTop: '10rem' }} className='text-danger '>Your Email is not verified</h3>
+    //         <h5 className='text-success'>Please Verify your email address</h5>
+    //         <button style={{ marginBottom: '10rem' }} className='btn btn-danger'
+    //             onClick={async () => {
+    //                 await sendEmailVerification();
+    //                 toast('Email sent');
+    //             }}
+    //         >
+    //             Send Verification Email again
+    //         </button >
+    //         <ToastContainer></ToastContainer>
+    //     </div>
+    // }
     return children
 };
 

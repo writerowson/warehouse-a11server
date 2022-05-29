@@ -6,6 +6,8 @@ import Inventory from '../IInventory/itemsOfInventory/Inventory';
 import Specialties from './Specialties';
 import { useNavigate } from 'react-router-dom';
 import { AiOutlineDoubleRight } from 'react-icons/ai'
+import { FormControl, InputGroup } from 'react-bootstrap';
+import { Button } from 'bootstrap';
 
 const Home = () => {
     const [inventories, setinventories] = UseInventory()
@@ -32,17 +34,18 @@ const Home = () => {
                 </div>
                 <button onClick={() => navigate('/inventory')} type="button" className="btn btn-outline-none btn-link text-danger fw-bold position-absolute bottom-0 end-0 text-decoration-none">Manage Inventories <AiOutlineDoubleRight></AiOutlineDoubleRight></button>
             </div>
+            <div className='text-center mt-5'>
+                <h2 style={{ color: '#110001' }} className=' font-roboto fs-1  '>Our TeamMates</h2>
+                <Opinion></Opinion>
+            </div>
 
             <Specialties></Specialties>
 
             <div className=' text-center mt-5 position-relative'>
                 {/* <img className='w-100' src={bg} alt="" /> */}
-                <div className=''>
-                    <h2 style={{ color: '#110001' }} className=' font-roboto fs-1  '>Our TeamMates</h2>
-                    <Opinion></Opinion>
-                </div>
 
-                {/* <h2 style={{ color: '#110001' }} className=' font-roboto fs-1  mt-5 '>Get The Latest Deals</h2>
+
+                <h2 style={{ color: '#110001' }} className=' font-roboto fs-1  mt-5 '>Get The Latest Deals</h2>
                 <p style={{ color: '#110001' }} className=' font-roboto   '>30% off for first time Joining</p>
                 <InputGroup className="px-5 mb-3 ">
                     <FormControl
@@ -50,11 +53,11 @@ const Home = () => {
                         aria-label="Email Address"
                         aria-describedby="basic-addon2"
                     />
-                    <Button variant=" text-light bg-danger" id="button-addon2">
-                        Subscribe
-                    </Button>
 
-                </InputGroup> */}
+                    <button className='btn btn-danger'> Subscribe</button>
+
+
+                </InputGroup>
 
 
             </div>

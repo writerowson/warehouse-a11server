@@ -9,8 +9,8 @@ const Inventory = ({ inventory }) => {
     }
 
     return (
-        <div style={{ color: '#110001' }} className='col-lg-2 col-12 text-center'>
-            <div className='shadow rounded mb-5 p-2  '>
+        <div style={{ color: '#110001' }} className='col-lg-2 col-12 text-center '>
+            <div className='shadow rounded mb-5 p-2 bg-light '>
                 <img style={{
                     height: '15rem', width: '10rem'
                 }} className=' rounded' src={img} alt="" />

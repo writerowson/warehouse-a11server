@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from 'react';
-
-
 import UseInventory from '../../../Shared/UseInventory';
 import Inventory from './itemsOfInventory/Inventory';
-
+import { AiOutlineDoubleRight } from 'react-icons/ai'
+import { useNavigate } from 'react-router-dom';
 
 const Inventories = () => {
     const [inventories, setinventories] = UseInventory()
     const [pageCount, setPAgeCount] = useState(0)
     const [pages, setPages] = useState(0)
-
+    const navigate = useNavigate()
     useEffect(() => {
         fetch('https://salty-shore-69868.herokuapp.com/inventoryCount')
             .then(res => res.json())
@@ -29,10 +28,14 @@ const Inventories = () => {
                     key={inventory._id}
                     inventory={inventory}
                 ></Inventory>)}
-                <div>
-                    {[...Array(pageCount).keys()].map(number => <button onClick={() => setPages(number)} className={pages === number ? 'ms-2 btn border border-danger' : 'ms-2 border border-none'}>{number + 1}</button>)
-                    }
-                </div>
+            </div>
+            <div className="text-center">
+                <button onClick={() => navigate('/additems')} type="button" className="btn btn-success">Add new Items <AiOutlineDoubleRight></AiOutlineDoubleRight></button>
+            </div>
+
+            <div>
+                {[...Array(pageCount).keys()].map(number => <button onClick={() => setPages(number)} className={pages === number ? 'ms-2 btn border border-danger' : 'ms-2 border border-none'}>{number + 1}</button>)
+                }
             </div>
         </div >
     );

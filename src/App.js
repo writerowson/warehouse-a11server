@@ -20,7 +20,7 @@ import MyItems from './pages/HomePage/IInventory/itemsOfInventory/MyItems';
 function App() {
 
   return (
-    <div className="bg-light">
+    <div style={{ backgroundColor: '#ffe9ea' }}>
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>} > </Route>
